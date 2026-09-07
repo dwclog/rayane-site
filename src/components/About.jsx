@@ -1,4 +1,4 @@
-import aboutImage from "../assets/images/rayane-seated-smile.jpg";
+import aboutImage from "../assets/images/rayane-camera.jpg";
 import useReveal from "../hooks/useReveal";
 
 export default function About() {
@@ -27,17 +27,14 @@ export default function About() {
           <div className="md:col-span-7 lg:col-start-7 lg:col-span-6">
             <p className="eyebrow mb-5">Sobre mim</p>
             <p className="font-display text-espresso text-3xl sm:text-4xl md:text-5xl leading-tight mb-8">
-              Sou Rayane Falcão, fotógrafa e profissional audiovisual.
+              Sou Rayane Falcão, videomaker e profissional audiovisual.
             </p>
             <div className="space-y-5 text-ink/80 text-[16px] sm:text-lg leading-relaxed max-w-lg">
               <p>
-                Acredito que uma boa imagem vai além da estética: ela transmite
-                presença, sentimento e identidade.
+                Acredito que cada projeto tem uma essência própria, e que é através do olhar que encontramos a melhor forma de traduzi-la
               </p>
               <p>
-                Meu olhar busca registrar pessoas, momentos e histórias de uma
-                maneira natural e autêntica, criando imagens que continuam
-                fazendo sentido mesmo depois que o momento passa.
+                meu trabalho nasce de um olhar atento aos detalhes e da busca por criar vídeos que revelem verdade, personalidade e intenção.
               </p>
             </div>
 

@@ -13,7 +13,7 @@ export default function Editorial() {
 
       <div className="relative z-10 h-full container-page flex flex-col items-center justify-end text-center pb-16 sm:pb-20">
         <p className="font-display text-cream text-[9vw] sm:text-5xl md:text-6xl leading-tight max-w-3xl">
-          Seu momento. Seu olhar.
+          Sua ideia. Meu olhar.
           <br /> Sua história.
         </p>
         <a

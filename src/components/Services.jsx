@@ -3,13 +3,13 @@ import useReveal from "../hooks/useReveal";
 const SERVICES = [
   {
     number: "01",
-    title: "Fotografia",
-    description: "Ensaios e registros fotográficos com direção e olhar autoral.",
+    title: "Conteúdo para marcas",
+    description: "vídeos para redes sociais, produtos, serviços e campanhas.",
   },
   {
     number: "02",
-    title: "Retratos",
-    description: "Imagens profissionais que valorizam sua presença e identidade.",
+    title: "Histórias e experiências",
+    description: "vídeos documentais, bastidores, eventos e registros de momentos que merecem ser contados.",
   },
   {
     number: "03",

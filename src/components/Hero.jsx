@@ -15,7 +15,7 @@ export default function Hero() {
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/55 via-transparent to-transparent" />
-        <p className="absolute top-[94px] left-6 eyebrow text-cream/80">Fotografia &amp; Audiovisual</p>
+        <p className="absolute top-[94px] left-6 eyebrow text-cream/80">Produção Audiovisual</p>
       </div>
 
       {/* Mobile: texto logo abaixo, em fundo sólido */}
@@ -27,10 +27,10 @@ export default function Hero() {
             Falcão
           </h1>
           <p className="mt-6 text-cream/90 font-display italic text-xl leading-snug">
-            Fotografia que transforma momentos em memória.
+            Um olhar que transforma ideias em narrativas visuais.
           </p>
           <p className="mt-4 text-cream/65 text-[15px] leading-relaxed max-w-sm">
-            Fotografia e audiovisual com olhar sensível, identidade e intenção.
+            Um olhar que transforma ideias em narrativas visuais.
           </p>
 
           <div className="mt-8 flex flex-col gap-3">
