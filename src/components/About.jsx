@@ -27,14 +27,14 @@ export default function About() {
           <div className="md:col-span-7 lg:col-start-7 lg:col-span-6">
             <p className="eyebrow mb-5">Sobre mim</p>
             <p className="font-display text-espresso text-3xl sm:text-4xl md:text-5xl leading-tight mb-8">
-              Sou Rayane Falcão, videomaker e profissional audiovisual.
+              Sou Rayane Falcão, videomaker e profissional Audiovisual.
             </p>
             <div className="space-y-5 text-ink/80 text-[16px] sm:text-lg leading-relaxed max-w-lg">
               <p>
-                Acredito que cada projeto tem uma essência própria, e que é através do olhar que encontramos a melhor forma de traduzi-la
+                Acredito que cada projeto tem uma essência própria, e que é através do olhar que encontramos a melhor forma de traduzi-la.
               </p>
               <p>
-                meu trabalho nasce de um olhar atento aos detalhes e da busca por criar vídeos que revelem verdade, personalidade e intenção.
+                Meu trabalho nasce de um olhar atento aos detalhes e da busca por criar vídeos que revelem verdade, personalidade e intenção.
               </p>
             </div>
 

@@ -19,7 +19,7 @@ export default function Contact() {
           Vamos criar juntos?
         </h2>
         <p className="text-ink/70 text-base sm:text-lg max-w-md mx-auto mb-12 leading-relaxed">
-          se você tem uma ideia, uma história para contar ou simplesmente quer conversar sobre um projeto, entre em contato
+          Se você tem uma ideia, uma história para contar ou simplesmente quer conversar sobre um projeto, entre em contato.
         </p>
 
         <a

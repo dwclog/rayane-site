@@ -29,9 +29,7 @@ export default function Hero() {
           <p className="mt-6 text-cream/90 font-display italic text-xl leading-snug">
             Um olhar que transforma ideias em narrativas visuais.
           </p>
-          <p className="mt-4 text-cream/65 text-[15px] leading-relaxed max-w-sm">
-            Um olhar que transforma ideias em narrativas visuais.
-          </p>
+        
 
           <div className="mt-8 flex flex-col gap-3">
             <a

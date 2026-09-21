@@ -4,12 +4,12 @@ const SERVICES = [
   {
     number: "01",
     title: "Conteúdo para marcas",
-    description: "vídeos para redes sociais, produtos, serviços e campanhas.",
+    description: "Vídeos para redes sociais, produtos, serviços e campanhas.",
   },
   {
     number: "02",
     title: "Histórias e experiências",
-    description: "vídeos documentais, bastidores, eventos e registros de momentos que merecem ser contados.",
+    description: "Vídeos documentais, bastidores, eventos e registros de momentos que merecem ser contados.",
   },
   {
     number: "03",

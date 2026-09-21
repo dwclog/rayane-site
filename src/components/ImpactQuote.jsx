@@ -12,7 +12,7 @@ export default function ImpactQuote() {
         }`}
       >
         <p className="font-display text-espresso text-[9vw] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.08] max-w-4xl mx-auto">
-          cada projeto começa
+          Cada projeto começa
           <br className="hidden sm:block" /> com uma ideia.
         </p>
         <p className="mt-8 text-stone text-base sm:text-lg max-w-md mx-auto">
