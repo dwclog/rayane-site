@@ -11,13 +11,13 @@ const LINKS = [
 ];
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(true);
-  const [open, setOpen] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: false });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
