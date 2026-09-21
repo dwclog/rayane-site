@@ -1,5 +1,5 @@
 import { ArrowDown } from "lucide-react";
-import heroImage from "../assets/images/rayane-dynamic-camera.jpg";
+import heroImage from "../assets/images/rayane-camera.jpg";
 import { whatsappLink } from "../config";
 
 export default function Hero() {

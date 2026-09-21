@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Expand } from "lucide-react";
 import Lightbox from "./Lightbox";
-import portraitImg from "../assets/images/rayane-seated-smile.jpg";
-import fullLengthImg from "../assets/images/rayane-dynamic-camera.jpg";
+import portraitImg from "../assets/images/Portfolio_1.jpeg";
+import fullLengthImg from "../assets/images/Portfolio_2.jpeg";
 import useReveal from "../hooks/useReveal";
 
 // ─────────────────────────────────────────────────────────────
