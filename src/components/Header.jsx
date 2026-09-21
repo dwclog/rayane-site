@@ -54,10 +54,7 @@ export default function Header() {
           className="flex items-center gap-2 shrink-0"
           aria-label="Rayane Falcão Audiovisual — início"
         >
-          <img  
-            src={scrolled ? logo_white : logo} 
-            alt="Rayane Falcão Audiovisual" 
-            className="h-9 sm:h-10 w-auto" />
+          <img  src={logo} alt="Rayane Falcão Audiovisual"  className="h-9 sm:h-10 w-auto" />
         </a>
 
         {/* Nav desktop */}
