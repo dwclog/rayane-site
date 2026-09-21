@@ -38,9 +38,9 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ease-editorial ${
-        scrolled
-          ? "bg-cream/80 backdrop-blur-md border-b border-espresso/10"
-          : "bg-transparent border-b border-transparent"
+        
+          "bg-cream/80 backdrop-blur-md border-b border-espresso/10"
+         
       }`}
     >
       <div className="container-page flex items-center justify-between h-[76px] sm:h-[84px]">
