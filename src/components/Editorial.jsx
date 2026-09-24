@@ -1,4 +1,4 @@
-import editorialImage from "../assets/images/rayane-seated-smile.jpg";
+import editorialImage from "../assets/images/RAY1.jpg";
 
 export default function Editorial() {
   return (
