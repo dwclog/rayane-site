@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import logo from "../assets/images/logo.png";
-import logo_white from "../assets/images/logo-white.png";
 import { whatsappLink } from "../config";
 
 const LINKS = [
