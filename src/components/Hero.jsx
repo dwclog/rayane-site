@@ -15,7 +15,7 @@ export default function Hero() {
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/55 via-transparent to-transparent" />
-        <p className="absolute top-[94px] left-6 eyebrow text-cream/80">Produção Audiovisual</p>
+        <p className="absolute top-[94px] left-6 eyebrow text-cream/80"></p>
       </div>
 
       {/* Mobile: texto logo abaixo, em fundo sólido */}
