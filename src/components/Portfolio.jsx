@@ -31,8 +31,16 @@ const PORTFOLIO_ITEMS = [
 // do link, ex.: youtube.com/shorts/ID) e um título.
 // ─────────────────────────────────────────────────────────────
 const VIDEOS = [
-  { id: "x11KoI4loxM", title: "Limpeza de Pele · Alana" },
-  { id: "YvHOk53XHig", title: "Studio Victória Conceição" },
+  {
+    id: "1233809201",
+    title: "Limpeza de Pele · Alana",
+    type: "vimeo",
+  },
+  {
+    id: "1233809203",
+    title: "Studio Victória Conceição",
+    type: "vimeo",
+  },
 ];
 
 export default function Portfolio() {
@@ -103,6 +111,7 @@ export default function Portfolio() {
               <VideoCard
                 key={v.id}
                 id={v.id}
+                type={v.type}
                 title={v.title}
                 label={String(i + 1).padStart(2, "0")}
                 className="w-full max-w-[420px] mx-auto"
