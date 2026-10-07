@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Play } from "lucide-react";
 
 export default function VideoCard({
@@ -9,6 +9,23 @@ export default function VideoCard({
   className = "",
 }) {
   const [playing, setPlaying] = useState(false);
+  const [thumbnail, setThumbnail] = useState(null);
+
+  // Busca automaticamente a thumbnail do Vimeo
+  useEffect(() => {
+    if (type === "vimeo") {
+      fetch(
+        `https://vimeo.com/api/oembed.json?url=https://vimeo.com/${id}`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          setThumbnail(data.thumbnail_url);
+        })
+        .catch((error) => {
+          console.error("Erro ao carregar thumbnail do Vimeo:", error);
+        });
+    }
+  }, [id, type]);
 
   return (
     <div className={className}>
@@ -19,19 +36,28 @@ export default function VideoCard({
             aria-label={`Assistir vídeo: ${title}`}
             className="group absolute inset-0 w-full h-full focus-visible:outline-offset-4"
           >
-            {type === "youtube" ? (
+            {type === "vimeo" ? (
+              thumbnail && (
+                <img
+                  src={thumbnail}
+                  alt={`Miniatura do vídeo ${title}`}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-editorial group-hover:scale-[1.05]"
+                />
+              )
+            ) : (
               <img
                 src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
                 alt={`Miniatura do vídeo ${title}`}
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-editorial group-hover:scale-[1.05]"
               />
-            ) : (
-              <div className="absolute inset-0 bg-ink" />
             )}
 
+            {/* Escurecimento da imagem */}
             <div className="absolute inset-0 bg-ink/20 group-hover:bg-ink/35 transition-colors duration-500" />
 
+            {/* Botão Play */}
             <span className="absolute inset-0 flex items-center justify-center">
               <span className="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-cream/80 text-cream bg-ink/30 backdrop-blur-sm group-hover:bg-cream group-hover:text-espresso transition-colors duration-300">
                 <Play
@@ -45,7 +71,7 @@ export default function VideoCard({
           </button>
         ) : type === "vimeo" ? (
           <iframe
-            src={`https://player.vimeo.com/video/${id}?title=0&byline=0&portrait=0&badge=0&autopause=0`}
+            src={`https://player.vimeo.com/video/${id}?autoplay=1&title=0&byline=0&portrait=0&badge=0`}
             title={title}
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
