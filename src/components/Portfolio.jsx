@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Expand } from "lucide-react";
 import Lightbox from "./Lightbox";
+import VideoCard from "./VideoCard";
 import portraitImg from "../assets/images/Portfolio_1.jpeg";
 import fullLengthImg from "../assets/images/Portfolio_2.jpeg";
 import useReveal from "../hooks/useReveal";
@@ -23,6 +24,15 @@ const PORTFOLIO_ITEMS = [
     category: "Retratos",
     span: "md",
   },
+];
+
+// ─────────────────────────────────────────────────────────────
+// VÍDEOS — para adicionar outro, cole o ID do YouTube (a parte final
+// do link, ex.: youtube.com/shorts/ID) e um título.
+// ─────────────────────────────────────────────────────────────
+const VIDEOS = [
+  { id: "x11KoI4loxM", title: "Limpeza de Pele · Alana" },
+  { id: "YvHOk53XHig", title: "Studio Victória Conceição" },
 ];
 
 export default function Portfolio() {
@@ -81,6 +91,24 @@ export default function Portfolio() {
               </div>
             </button>
           ))}
+        </div>
+
+        <div className="mt-24 sm:mt-32">
+          <p className="eyebrow mb-4">Vídeos</p>
+          <h3 className="font-display text-espresso text-3xl sm:text-4xl md:text-5xl leading-none mb-12 sm:mb-16">
+            Em movimento
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 max-w-3xl mx-auto sm:max-w-none lg:max-w-4xl lg:mx-auto">
+            {VIDEOS.map((v, i) => (
+              <VideoCard
+                key={v.id}
+                id={v.id}
+                title={v.title}
+                label={String(i + 1).padStart(2, "0")}
+                className="w-full max-w-[420px] mx-auto"
+              />
+            ))}
+          </div>
         </div>
       </div>
 
